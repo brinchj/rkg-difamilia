@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <style>
+      input {border: 1px solid black;}
+      input.clear {border: none;}
+    </style>
+    <title>ShoutBox</title>
+
+
+    <script type="text/javascript" src="./prototype.js"></script>
+    <script type="text/javascript" src="./cookiejar.js"></script>
+    <script type="text/javascript" src="./shoutbox.js"></script>
+
+
+  </head>
+  <body onload="sbInit()">
+
+    <div id="sb_choose_name" style="display: none">
+      <form onsubmit="return sbSetName(this)">
+      Choose your name: <input type="text" name="name"></input>
+      <input type="button" value="Save"
+	     onClick="sbSetName(this.form)"></input>
+      </form>
+    </div>
+
+    <div id="sb_messenger" style="display: none">
+      <form onsubmit="return sbPost(this)">
+      <input type="text" name="message"></input>
+      <input type="button" value="Send"
+	     onClick="sbPost(this.form)"></input>
+      </form>
+    </div>
+
+    <div id="sb_posting" style="display: none">
+      posting..
+    </div>
+
+
+    <div id="sb_main">
+      <div id="sb_list" style="height:175px"></div>
+      <div id="sb_input"></div>
+    </div>
+
+  </body>
+</html>
