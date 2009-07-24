@@ -1,0 +1,156 @@
+/*  
+Theme Name: Wasteland
+Theme URI: http://the-cloisters.net/themedemos/?SelectedTheme=Wasteland
+Description: 5 Column (main content, 2 sidebars and 2 top sections), widget-ready fixed width theme in soothing Creme and Brown colors featuring an author box, author info page, gravatars and highlighted author comments in the comments section along with Custom Archives, Sitemap and full width No Sidebars page templates.  Tested in Firefox, Opera, Safari, IE6 and IE7. Compatible up to Wordpress 2.7.
+Version: 1.3
+Author: Mina
+Author URI: http://www.the-cloisters.net/
+Tags: 5 column, fixed width, gravatars, widgets, creme, brown, author box, sitemap, archives, 2.7
+
+*/
+
+
+/***** TYPOGRAPHY AND LINKS *****/
+body, address, dd, dl, hr, p, form { font-family: "Trebuchet MS", Verdana, Tahoma, Arial, Sans-serif; margin: 0; padding: 0; }
+
+h1, h2, h3, h4, h5, h6 { color: #533419; font-family: Georgia, "Trebuchet MS", Helvetica, Verdana, Times, Tahoma, Arial, Sans-serif; margin: 0; padding: 0 0 20px 5px; }
+
+h1 { font-size: 2em; }
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.4em; }
+h4 { font-size: 1.3em; }
+h5 { font-size: 1.2em; }
+h6 { font-size: 1.1em; }
+
+a:link, a:visited { text-decoration: none; color: #533419; }
+a:hover { text-decoration: underline; color: #660000; }
+p { padding: 10px; }
+blockquote { margin: 15px 40px 10px 30px; padding: 0 10px 10px 20px; font-style: italic; border-left: 2px solid #7c7953; border-right: 2px solid #7c7953; }
+
+/***** MAIN CONTENT *****/
+body { margin: 0; font-size: 76.5%; text-align: center; vertical-align: top; background: #3f3013 url(images/body-bg.jpg) repeat; color: #444; }
+
+#wrapper { margin: 0 auto 0 auto; width: 1000px; text-align: left; }
+
+#main_content { background: #ebe1c8; float: left; margin: 0 auto 0 auto; padding: 0; width: 1000px; border: #3f3013 3px double; }
+#container { background: #ebe1c8; float: left; width: 530px; margin: 0 10px 0 7px; padding: 0 10px 10px 10px; }
+#container_wide { background: #ebe1c8; float: left; width: 900px; margin: 0 0 0 35px; padding: 5px 5px 0 7px; }
+
+.post { padding: 10px 0 5px 0; }
+.post h2 { font-size: 1.5em; margin: 0 0 0 5px; padding-top: 5px; }
+.entry { font-size: 1.02em; background: url(images/dot.gif) repeat-x scroll 0pt 100% !important; line-height: 1.42em; padding: 0 0 40px 0; }
+.postmetadata { margin: 0; font-size: 9px; }
+.date {	font-size: .9em; margin-top: -30px; }
+
+#author-box { width: 90%; min-height: 115px; margin: 10px 10px 20px 10px; padding: 0 10px 10px 10px; background: #b3a381; border: #3f3013 1px solid; }
+#author-box .avatar { float: left; width: 80px; height: 80px; }
+#author-box h2 { padding: 0; margin: 5px 0 5px 0; }
+
+/***** HEADER *****/
+#header-wrap { float: center; width: 990px; height: 140px; background: #ebe1c8; padding: 0; margin: 0 auto 0 auto; }
+.header { background: #ebe1c8 url(images/header.jpg) no-repeat; width: 990px; height: 140px; margin: 0 auto 10px auto; padding: 0; float: left; border-bottom: #3f3013 3px double; }
+.header h1 { width: 500px; padding: 0; margin: 20px 0 0 30px; font-family: Georgia, Times New Roman, Sans-serif; font-size: 3.5em; line-height: 40px; text-align: left; }
+.header h1 a { text-decoration: none; color: #3f3013; }
+.header h1 a:hover { text-decoration: none; color: #cc9933; }
+.header .description { width: 500px; margin: 0 0 0 60px; padding: 0; font-size: 1.5em; font-weight: normal; font-family: Georgia; color: #3f3013; text-align: left; text-transform: lowercase; }
+
+/***** HORIZONTAL MENU *****/
+.menu  { float: left; width: 990px; height: 30px; margin: 0 0 5px 5px; padding: 0; display: inline; background: #514424 url(images/horz-bg.jpg) repeat; }
+.menu ul { width: 100%; margin: 0; padding: 8px 0; list-style: none; }
+.menu ul li { display: inline; margin: 0; }
+.menu ul li a { width: 100%; margin-left: 10px; padding: 0; text-decoration: none; color: #dbcfb0; font-size: 1.1em; }
+.menu ul li a:hover { color: #dbcfb0; text-decoration: underline; }
+.menu a:link, .menu a:visited { text-decoration: none; color: #dbcfb0; }
+
+/***** IMAGES *****/
+p img { padding: 0; max-width: 100%; }
+a img { border: #544b40 1px solid; padding: 3px; background: none; }
+
+img.avatar { float: left; margin: 5px; border: #544b40 1px solid; }
+img.centered { display: block; margin-left: auto; margin-right: auto; }
+img.alignright { padding: 3px; margin: 0 0 0 7px; display: inline; }
+img.alignleft { padding: 3px; margin: 0 7px 0 0; display: inline; }
+
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter, div.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
+.wp-caption { border: 1px solid #ddd; text-align: center; background-color: #f3f3f3; padding-top: 4px; margin: 10px; /* optional rounded corners for browsers that support it */ -moz-border-radius: 3px; -khtml-border-radius: 3px; -webkit-border-radius: 3px; border-radius: 3px; }
+.wp-caption img { margin: 0; padding: 0; border: 0 none; }
+.wp-caption p.wp-caption-text { font-size: 11px; line-height: 17px; padding: 0 4px 5px; margin: 0; }
+
+#flickrrss img { border: 1px solid #544b40; float: left; margin: 0 0 3px 3px; }
+
+.thumbnail { width: 60px; height: 60px; float: left; margin: 3px; border: #544b40 1px solid; }
+.medium { width: 250px; height: 150px; float: left; margin: 3px; border: #544b40 1px solid; }
+
+/***** NAVIGATION *****/
+.navigation { padding: 5px 0 5px 10px; font-size: 9px; font-weight: bold; line-height: 18px; }
+
+/***** FOOTER *****/
+#footer  { float: left; width: 990px; height: 30px; margin: 0 0 10px 5px; padding: 0; display: inline; background: #514424 url(images/horz-bg.jpg) repeat; }
+#footer p { font-size: .9em; width: 900px; height: 30px; float: right; line-height: 18px; padding: 5px 10px 0 10px; text-align: right; color: #dbcfb0; }
+#footer a { color: #d4be87; }
+
+/***** SUBSCRIPTION *****/
+.subscribe  { float: right; margin: 10px 10px 0 0; padding: 0; text-decoration: none; }
+.subscribe img { border: none; }
+
+/***** SIDEBAR *****/
+#left_sidebar { background: #ebe1c8; width: 210px; float: left; margin: 0 0 20px 5px; padding: 0 auto 0 auto; clear: left; } 
+#right_sidebar { background: #ebe1c8; width: 210px; float: right; margin: 0 5px 20px 0; padding: 0 auto 0 auto; vertical-align: top; }  
+#left_sidebar ul li a:hover, #right_sidebar ul li a:hover { color: #660000; }
+#left_sidebar ul li a, #right_sidebar ul li a { font-size: 1.08em; display: inline; margin: 0; padding: 0; }
+#left_sidebar ul li, #right_sidebar ul li { background: #ded3b7; display: block; padding: 0 0 3px 0; margin: 0; list-style: none; }
+#left_sidebar ul ul, #right_sidebar ul ul { margin: 0 0 0 10px; }
+#left_sidebar ul ul ul, #right_sidebar ul ul ul { margin: 0 0 0 10px; }
+#left_sidebar ul, #right_sidebar ul { margin: 0 0 5px 0; padding: 0; }
+#left_sidebar h2, #right_sidebar h2, #commentblock h2 { font-size: 1.06em; text-transform: uppercase; letter-spacing: normal; margin: 15px auto 5px auto; padding: 3px 3px 3px 0px; text-align: center; background: #b3a381 url(images/cat-bg.jpg) repeat; border-top: #7c7953 1px solid; border-bottom: #7c7953 1px solid; } 
+
+/***** SEARCH *****/
+#searchform { margin: 10px auto; padding: 5px 3px; text-align: center; }
+#sidebar #searchform #s { width: 108px; padding: 2px; }
+#sidebar #searchsubmit { padding: 1px; }
+
+/***** Calendar *****/
+#wp-calendar { text-align: center; background: #b3a381; margin: 0 0 10px 20px; padding: 0; width: 80%; border: #3f3013 1px solid; font-variant: small-caps; font-family: Times, Verdana, Sans-Serif; }
+#wp-calendar td { line-height: 10px; font-size: 10px; color: #544b40; font-variant: small-caps; }
+#wp-calendar td a { display: block; color: #544b40; text-decoration: none; line-height: 10px;
+font-weight: bold; font-variant: small-caps; font-size: 10px; }
+#wp-calendar #prev a { width: 30px; font-variant: small-caps; }
+#wp-calendar #next a { width: 30px; margin: 0 0 0 30px; font-variant: small-caps; }
+#wp-calendar #today { background: #600000; color: #e6ddbc; font-variant: small-caps; }
+#wp-calendar #today a { color: #544b40; font-weight: 700; font-variant: small-caps; }
+#wp-calendar caption { color: #533419; text-align: center; width: 80%; margin: 5px 0 5px 20px; font-family: Times, Verdana,Sans-Serif; font-size: 14px; }
+
+/***** COMMENTS *****/
+.comments-template { margin: 0 10px; border-top: 1px solid #dcd7bc; padding: 0 10px; }
+.comments-template ol { margin: 0; padding: 0 0 15px; list-style: none; }
+.comments-template ol li { margin: 0; line-height: 14px; padding: 10px 0 10px 5px; }
+.comments-template h2, .comments-template h3 { font-family: Georgia, Sans-serif; font-size: 12px; margin: 10px 0 0 0; }
+.commentmetadata { font-size: 9px; }
+.comments-template p.nocomments { padding: 0; }
+.comments-template textarea { width: 95%; max-width: 500px; font-family: Arial, Helvetica, Georgia, Sans-serif; font-size: 11px; background: #efeadc; }
+.authorcomment { background: #ded3b7; }
+
+/***** TOP *****/
+#top { clear: both; float: left; width: 780px; margin: 14px 0 0 0; padding: 0; background: #ebe1c8; }
+
+/***** TOP SECTIONS*****/
+.top-section { background: url(images/dot.gif) repeat-x scroll 0pt 100% !important; float: left; width: 780px; height: 157px; margin: 0; padding: 0; color: #444; }
+.top-section .area { background: #ded3b7; float: left; width: 230px; height: 150px; margin-left: 5px; padding: 0; border: #d5c7a4 1px solid; }
+.top-section .area.extra { background: #ded3b7; width: 535px; height: 150px; margin-left: 5px; padding: 0; }
+.top-section .area h2 { color: #444; font-size: 1.2em; text-transform: uppercase; letter-spacing: normal; margin: 5px auto 5px auto; padding: 3px 3px 3px 7px; text-align: left; background: transparent; border-bottom: #7c7953 1px solid; width: 95%; }
+.top-section .area ul li ul li { list-style: none; margin: 0; }
+.top-section .area li { list-style: none; text-align: left; margin: 0; font-size: 1.1em; }
+.top-section .area a { color: #444; font-size: .8em; }
+.top-section .area a:hover { color: #fff; }
+
+/***** IE HACKS *****/
+*html #left_sidebar { margin: 0 0 20px 3px; } 
+*html #main_content { padding-bottom: 10px; border: #fff 3px double; }
+*html #container { width: 520px; margin: 0 10px 0 2px; padding: 0 10px 10px 10px; }
+*html #container_wide { margin: 0 0 0 20px; }
+*html #top, .top-section { margin-left: -1px; }
+*html .top-section .area { height: 150px; }
+*html .top-section .area.extra { width: 530px; height: 150px; }
