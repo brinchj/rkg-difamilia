@@ -1,8 +1,3 @@
-function el(s) {
-    return document.getElementById(s);
-}
-
-
 var CJAR = new CookieJar({
 			     expires: 3600, path: '/'
 			 });
@@ -12,9 +7,9 @@ var SB_USER;
 function sbInit() {
     SB_USER = CJAR.get('sb_user');
     if(SB_USER == null || SB_USER.name == null) {
-	el('sb_input').innerHTML = el('sb_choose_name').innerHTML;
+	$('sb_input').innerHTML = $('sb_choose_name').innerHTML;
     } else {
-	el('sb_input').innerHTML = el('sb_messenger').innerHTML;
+	$('sb_input').innerHTML = $('sb_messenger').innerHTML;
     }
     new Ajax.PeriodicalUpdater('sb_list', './getlist.php',
 			       { frequency: 1, decay: 1.1 });
@@ -26,7 +21,7 @@ function sbSetName(form) {
 	'name': name
     };
     CJAR.put('sb_user', SB_USER);
-    el('sb_input').innerHTML = el('sb_messenger').innerHTML;
+    $('sb_input').innerHTML = $('sb_messenger').innerHTML;
 }
 
 
