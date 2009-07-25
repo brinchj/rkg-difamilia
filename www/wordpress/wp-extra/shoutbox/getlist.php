@@ -12,6 +12,8 @@ $DB   = "difamilia";
 $QUOTE_FILE     = "last_quote.dat";
 $QUOTE_TIME_MAX = 12*60*60;
 
+$WRAP_WIDTH = 60;
+
 
 
 $con = mysql_connect($HOST, $USER, $PASS)
@@ -21,9 +23,15 @@ $db  = mysql_select_db($DB)
 	or die(mysql_error());
 
 
+function wrap($s) {
+	global $WRAP_WIDTH;
+	return wordwrap($s, $WRAP_WIDTH, "\n", true);
+}
+
 function quote($s) {
-	return mysql_real_escape_string(
-		htmlentities($s, ENT_QUOTES, 'UTF-8'));
+	return 	str_replace("\\n", "\n",
+		mysql_real_escape_string(
+			    htmlentities(wrap($s), ENT_QUOTES, 'UTF-8')));
 }
 
 function insert($name, $msg) {
